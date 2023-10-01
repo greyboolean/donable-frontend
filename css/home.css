@@ -1,0 +1,279 @@
+/* hero start */
+.hero__container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+
+	.hero__background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		.hero__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.hero__overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.hero__content {
+		display: flex;
+		z-index: 1;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 50%;
+		margin: 0 0 0 5rem;
+		color: #fff;
+
+		.hero__title {
+			font-size: 4rem;
+			text-transform: capitalize;
+			font-weight: bold;
+			margin-bottom: 2rem;
+		}
+
+		.hero__text {
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		.hero__btn {
+			margin-top: 1.2rem;
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.5rem;
+			background-color: #2d83c9;
+			color: #fff;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+}
+/* hero end */
+
+/* search start */
+.search__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+
+	.search__title {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		text-transform: capitalize;
+	}
+
+	.search__form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		border-radius: 0.5rem;
+		padding: 2rem;
+		background-color: #fff;
+
+		.search__input {
+			width: 100%;
+			padding: 0.5rem 1rem;
+			margin-right: 1rem;
+			border: 1px solid #2d83c9;
+			border-radius: 0.5rem;
+			font-size: 1.5rem;
+		}
+
+		.search__input:focus {
+			outline: none;
+			border: 1px solid #1e5888;
+		}
+
+		.search__btn {
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.5rem;
+			background-color: #2d83c9;
+			color: #fff;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+}
+/* search end */
+
+/* popluar charities start */
+.popular-charities__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+
+	.popular-charities__title {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		text-transform: capitalize;
+	}
+
+	.popular-charities__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+		width: 100%;
+		padding: 2rem;
+
+		.popular-charities__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+
+			.popular-charities__item-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 0.5rem;
+			}
+
+			.popular-charities__item-content {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				margin-top: 1rem;
+
+				.popular-charities__item-title {
+					font-size: 1.5rem;
+					margin-bottom: 1rem;
+				}
+
+				.popular-charities__item-text {
+					font-size: 1rem;
+					margin-bottom: 1rem;
+				}
+
+				.popular-charities__item-btn {
+					padding: 0.5rem 1rem;
+					border: none;
+					border-radius: 0.5rem;
+					background-color: #2d83c9;
+					color: #fff;
+					font-size: 1rem;
+					cursor: pointer;
+				}
+			}
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.popular-charities__btn {
+		padding: 0.5rem 1rem;
+		border: none;
+		border-radius: 0.5rem;
+		background-color: #2d83c9;
+		color: #fff;
+		font-size: 1.5rem;
+		cursor: pointer;
+		margin-top: 2rem;
+	}
+}
+/* popluar charities end */
+
+/* footer start */
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* padding: 4rem; */
+	background-color: #2d83c9;
+	color: #fff;
+
+	.footer__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		padding: 4rem;
+
+		.footer__brand {
+			width: 30%;
+
+			.footer__brand-title {
+				font-size: 1.5rem;
+				font-weight: bold;
+				color: #fff;
+				margin-bottom: 1rem;
+			}
+
+			.footer__brand-text {
+				font-size: 1rem;
+			}
+		}
+
+		.footer__grid {
+			display: flex;
+
+			.footer__item {
+				margin-left: 5rem;
+
+				.footer__item-title {
+					font-size: 1rem;
+					font-weight: bold;
+					margin-bottom: 1rem;
+					text-transform: capitalize;
+				}
+
+				.footer__item-link {
+					font-size: 1rem;
+					color: #fff;
+					cursor: pointer;
+				}
+
+				.footer__item-social {
+					display: flex;
+					flex-direction: row;
+
+					.footer__item-link {
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	.footer__bottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		/* margin-top: 2rem; */
+		border-top: 1px solid #fff;
+		padding: 2rem 4rem;
+
+		.footer__bottom-text {
+			font-size: 1rem;
+		}
+	}
+}
