@@ -112,7 +112,7 @@
 }
 /* search end */
 
-/* popluar charities start */
+/* popular charities start */
 .popular-charities__container {
 	display: flex;
 	flex-direction: column;
@@ -196,7 +196,7 @@
 		margin-top: 2rem;
 	}
 }
-/* popluar charities end */
+/* popular charities end */
 
 /* footer start */
 .footer__container {
