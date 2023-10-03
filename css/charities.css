@@ -1,0 +1,218 @@
+/* charities start */
+.charities__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+	margin-top: 4rem;
+
+	.charities__title {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		text-transform: capitalize;
+	}
+
+	.charities__main {
+		display: flex;
+		flex-direction: row;
+
+		.charities__aside {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* padding: 2rem;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+			padding: 2rem 1rem 0;
+			width: 25%;
+
+			.charities__search-form,
+			.charities__filter-form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				width: 100%;
+				padding: 2rem;
+				border-radius: 0.5rem;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 2rem;
+
+				.charities__search-title,
+				.charities__filter-title {
+					font-size: 1.5rem;
+					margin-bottom: 1rem;
+				}
+
+				.charities__search-btn,
+				.charities__filter-btn {
+					padding: 0.5rem 1rem;
+					border: none;
+					border-radius: 0.5rem;
+					background-color: #2d83c9;
+					color: #fff;
+					font-size: 1rem;
+					cursor: pointer;
+				}
+			}
+
+			.charities__search-form {
+				.charities__search-input {
+					padding: 0.5rem 1rem;
+					border: 1px solid #2d83c9;
+					border-radius: 0.5rem;
+					width: 100%;
+					margin-bottom: 1rem;
+
+					&:focus {
+						outline: none;
+						border: 1px solid #1e5888;
+					}
+				}
+			}
+
+			.charities__filter-form {
+				.charities__filter-ratings,
+				.charities__filter-categories {
+					margin-bottom: 1rem;
+
+					.charities__filter-subtitle {
+						margin-bottom: 1rem;
+					}
+
+					.charities__filter-ratings-items,
+					.charities__filter-categories-items {
+						.charities__filter-rating,
+						.charities__filter-category {
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-start;
+							align-items: center;
+							margin-bottom: 0.5rem;
+
+							.charities__filter-rating-input,
+							.charities__filter-category-input {
+								margin-right: 0.5rem;
+							}
+						}
+					}
+				}
+
+				.charities__filter-ratings {
+					.charities__filter-ratings-items {
+						.charities__filter-rating {
+							.charities__filter-rating-label {
+								.charities__filter-rating-star {
+									color: #ffaa4a;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.charities__content {
+			width: 75%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.charities__grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 2rem;
+				width: 100%;
+				/* padding: 2rem; */
+				padding: 2rem 1rem;
+
+				.charities__item {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 1rem;
+					border-radius: 0.5rem;
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+					cursor: pointer;
+					transition: all 0.3s ease-in-out;
+
+					.charities__item-img {
+						width: 100%;
+						height: 200px;
+						object-fit: cover;
+						border-radius: 0.5rem;
+					}
+
+					.charities__item-content {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: flex-start;
+						margin-top: 1rem;
+
+						.charities__item-title {
+							font-size: 1.5rem;
+							margin-bottom: 1rem;
+						}
+
+						.charities__item-text {
+							font-size: 1rem;
+							margin-bottom: 1rem;
+						}
+
+						.charities__item-btn {
+							padding: 0.5rem 1rem;
+							border: none;
+							border-radius: 0.5rem;
+							background-color: #2d83c9;
+							color: #fff;
+							font-size: 1rem;
+							cursor: pointer;
+						}
+					}
+
+					&:hover {
+						transform: scale(1.05);
+					}
+				}
+			}
+
+			.charities__pagination {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				margin-top: 2rem;
+
+				.charities__pagination-link {
+					padding: 0.5rem 1rem;
+					border-radius: 0.5rem;
+					color: #fff;
+					font-size: 1rem;
+					cursor: pointer;
+					margin: 0 0.5rem;
+				}
+
+				.charities__pagination-controls {
+					background-color: #2d83c9;
+					&:hover {
+						background-color: #2469a1;
+					}
+				}
+
+				.charities__pagination-numbers {
+					.charities__pagination-number {
+						background-color: #d3d3d3;
+					}
+					.charities__pagination-number--active {
+						background-color: #2469a1;
+					}
+				}
+			}
+		}
+	}
+}
+/* charities end */
