@@ -92,11 +92,11 @@
 			border: 1px solid #2d83c9;
 			border-radius: 0.5rem;
 			font-size: 1.5rem;
-		}
 
-		.search__input:focus {
-			outline: none;
-			border: 1px solid #1e5888;
+			&:focus {
+				outline: none;
+				border: 1px solid #1e5888;
+			}
 		}
 
 		.search__btn {
